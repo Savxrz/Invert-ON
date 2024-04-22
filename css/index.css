@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'interregular';
+    src: url('fuentes/inter/inter-regular-webfont.woff2') format('woff2'),
+         url('fuentes/inter/inter-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'interlight';
+    src: url('fuentes/inter/inter-light-webfont.woff2') format('woff2'),
+         url('fuentes/inter/inter-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'interregular';
+    color: #ffffff;
+}
+
+body{
+    background-color: #000000;
+}
+
+
+header{
+    background-color: #000000 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    padding: 1% 10%;
+}
+
+header #logo {
+    cursor: pointer;
+    width: 14%;
+    
+    
+}
+
+header #logo img {
+    height: auto;
+    width: 90%;
+    transition: all 0,3s;
+} 
+
+header #logo img:hover {
+    transform: scale(0.9);
+}
+
+header nav {
+    width: 50%;
+    list-style: none;
+    
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0 19px;
+}
+
+header nav li:hover {
+    border-bottom: #ffffff 1px solid;
+    width: auto;
+}
+
+header nav a {
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.contacto {
+    text-decoration: none;
+    background-color: #ffffff;
+    color:#110624;
+    font-size: 15px;
+    border-radius: 16px;
+    width: 7%;
+    text-align: center;
+    text-decoration: bold;
+    padding: 0.3%  1%;
+    cursor: pointer;
+    transition: all 0.3s case 0s;
+}
+
+
+main {
+    width: 200;
+}
+
+.titulo-1 {
+    background-image: url(img/fondo-prn.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 850px;
+    color: #f6f6f6;
+}
+
+
+#introduccion {
+    margin-left: 10%;
+    padding-top: 18%;
+}
+
+#introduccion h1 {
+    padding-bottom: 1%;
+    font-weight: 1000;
+    font-size: 300%;
+}
+
+#introduccion p {
+    padding-bottom: 2%;
+    color: #d3d0d0;
+    font-weight: 300;
+    font-size: 132%;
+}
+
+#flechas {
+    width: 30%;
+    margin: 0% 35%;
+    text-align: center;
+}
+
+#flechas img {
+    padding-top: 2%;
+    width: 10%;
+}
+
+
+#inversiones {
+    width: 80%;
+    margin: auto 10% 5% 10%;
+}
+
+
+#inversiones h6 {
+    font-size: 16px;
+    color: rgb(90, 79, 241);
+}
+
+#inversiones h1 {
+    margin: 3% 0%;
+    font-size: 45px;
+}
+
+
+#inversiones p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #d3d0d0;
+}
+
+.apartados {
+    display: flex;
+    margin: 0% 10%;
+}
+
+
+.apart-txt {
+    color: #ffffff;
+    text-align: left;
+    margin-right: 8%;
+    height: 100%;
+    width: 45%;
+    margin-top: 6%;
+    margin-left: 4%;
+}
+
+.apart-txt h2 {
+    margin-bottom: 2%;
+    font-size: 30px;
+}
+
+.apart-txt p {
+    color: #d3d0d0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.apart-img {
+    width: 20%;
+    height: 100%;
+    width: 45%;
+    text-align: center;
+}
+
+.apart-img img{
+    width: 70%;
+}
+
+#consejos {
+    background-color: #f6f6f6;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+#tit-consejos {
+    width: 80%;
+    margin: auto 10%;
+}
+
+#tit-consejos h6 {
+    font-size: 16px;
+    color: rgb(90, 79, 241);
+
+}
+
+#tit-consejos h1 {
+    margin: 2% 0%;
+    font-weight: 900;
+    font-size: 45px;
+    padding-bottom: 3%;
+    color: black;
+}
+
+
+
+#caja-consejos {
+    width: 80%;
+    margin: auto 10% ;
+    display: flex;
+}
+
+.blq-consejos {
+    margin-right: 4%;
+}
+
+.blq-consejos img {
+    width: 15%;
+    margin-bottom: 5%;
+}
+
+
+.blq-consejos h2 {
+    color: black;
+    font-size: 100%;
+    margin-bottom: 3%;
+}
+
+.blq-consejos p {
+    color:#909090;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+#academias {
+    width: 80%;
+    margin: auto 10%;
+    padding-top: 4%;
+    padding-bottom: 10%;
+}
+
+#academias h6 {
+    font-size: 16px;
+    color: rgb(90, 79, 241);
+}
+
+#academias h1 {
+    font-size: 45px;
+    padding-bottom: 3%;
+    margin-top: 1%;
+}
+
+#mapas {
+    height: 400px;
+    display: flex;
+    padding: 5%;
+}
+
+.Gmaps {
+    width: 45%;
+}
+
+#mapas iframe{
+    margin-top: 4%;
+    width: 100%;
+    height: 100%;
+    border-radius: 4%;
+}
+
+#espacio {
+    width: 10%;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2%;
+}
+
+footer p {
+    color: #000000;
+    font-size: 18px;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #D3D3D3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+  }
+  
+  form label {
+    color: #ffffff;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 14px;
+  }
+  
+  form input, form textarea {
+    background-color: transparent;
+    color: #D3D3D3;
+    border: 1px solid #ffffff;
+    padding: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+  }
+  
+  form button {
+    background-color: #4a4a4a00;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #3b3a3a86;
+  }
+
+
+.volver {
+    width: 20px;
+    margin-left: 30%;
+}
